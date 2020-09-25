@@ -1,14 +1,17 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import './Book.css';
+import Booking from './Booking'
+import { useLocation } from "react-router-dom";
 
-const Book = () => {
-    const history = useHistory();
+export default function Book(){
+    
+let location = useLocation();
+let description = location.state.Description;
+return (
+    <div>
+    
+        <Booking description = {description}></Booking>
 
-    return (
-        <div>
-            
-        </div>
+    </div>
     );
-};
-
-export default Book;
+}

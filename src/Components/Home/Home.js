@@ -1,44 +1,18 @@
 import React from 'react';
 import './Home.css';
-import CoxsBazar from '../../Image/CoxsBazar.png';
-import Sreemongol from '../../Image/Sreemongol.png';
-import Sundorbon from '../../Image/sundorbon.png';
-import TravelSpace from '../TravalSpace/TravelSpace';
+import Slider from '../Slider/Slider';
 import Header from '../Header/Header';
 
 const Home = () => {
- 
-// const places = [
-//     {
-//         title: "Cox's Bazar",
-//         description: '...',
-        
-        
-//     },
-//     {
-//         title: 'Sreemongol',
-//         description: '....',
-//         imgUrl: {Sreemongol}
-//     },
-//     {
-//         title: 'Sundorbon',
-//         description: ' ...',
-//         imgUrl: {Sundorbon}
-//     }
-// ]
+
 return (
     <div>
-        <Header></Header>
-        <img className="background" src={CoxsBazar} alt="" />
-        <TravelSpace></TravelSpace>
-     
-        {/* {
-            places.map(place => <TravelSpace place={place}></TravelSpace>)
-        } */}
+        <div className="background"></div>
+        {/* <Header></Header> */}
+        <Slider></Slider>
     </div>
-  
-
     );
 };
 
 export default Home;
+

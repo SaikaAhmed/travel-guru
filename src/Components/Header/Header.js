@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../Logo.png';
 import { Button, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import CoxsBazar from '../../Image/CoxsBazar.png';
+import './Header.css';
+import { UserContext } from '../../App'
 
 const Header = () => {
+    // const [ signIn, setSignIn ] = useContext({UserContext});
     return (
+        <div>
         <Navbar>
   <Navbar.Brand className="ml-5">
-      <Link to="/home"><img style={{width: '120px', height: '56px'}} src={logo} alt=""/></Link>
+      <Link to="/"><img style={{width: '120px', height: '56px', filter: 'brightness(800%)'}} src={logo} alt=""/></Link>
       </Navbar.Brand>
 <Nav className="mr-auto">
 <Form inline>
@@ -24,7 +29,7 @@ const Header = () => {
 <Button className="btn btn-warning">Login</Button>
 </Navbar.Collapse>
 </Navbar> 
-        
+</div>   
     );
 };
 
